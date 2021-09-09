@@ -16,8 +16,10 @@ try:
     edit = lat_removed_quotes[:7] + "," + lat_removed_quotes[7:] 
     lat_and_lot = "https://api.weather.gov/points/" + edit
     print(lat_and_lot) 
-    # weather_api = requests.get(lat_and_lot) 
-    # weather_api_output = weather_api.json()
+    weather_api = requests.get(lat_and_lot) 
+    weather_api_output = weather_api.json()
+    # print(weather_api_output)
+    geolocation_data_lon = json.dumps(weather_api_output[''])
     
 except KeyboardInterrupt:
     exit()
