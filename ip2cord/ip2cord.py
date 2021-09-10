@@ -3,7 +3,7 @@ import json
 
 
 
-def ip2cord(self):
+def ip2cord():
     geolocation = requests.get("https://get.geojs.io/v1/ip/geo.json")
     geolocation_output = geolocation.json() 
     geolocation_data_lon = json.dumps(geolocation_output['longitude']) 
