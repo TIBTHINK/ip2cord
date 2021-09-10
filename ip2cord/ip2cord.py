@@ -16,8 +16,3 @@ def ip2cord():
             lat_removed_quotes = remove_punct 
     edit = lat_removed_quotes[:7] + "," + lat_removed_quotes[7:]
     return(edit)
-
-if __name__ == 'ip2cord.py':
-    ip2cord()
-
-print(ip2cord())
